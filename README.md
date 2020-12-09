@@ -15,5 +15,5 @@ The `.github/workflows/workflow.yml` file has been modified to upload generated 
     java-version: 1.8
 - name: Upload to CoPilot
   if: github.event_name == 'push' || github.event_name == 'pull_request'
-  run: bash <(curl -s https://copilot-test.blackducksoftware.com/ci/githubactions/scripts/upload)
+  run: bash <(curl -s https://copilot.blackducksoftware.com/ci/githubactions/scripts/upload)
 ```
